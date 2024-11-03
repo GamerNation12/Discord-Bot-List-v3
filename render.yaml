@@ -5,15 +5,15 @@ services:
     plan: free
     name: DisBot.gg
     runtime: python
-    repo: https://github.com/render-examples/django.git
+    repo: https://github.com/GamerNation12/Discord-Bot-List-v3.git
     buildCommand: "./build.sh"
     startCommand: "python -m gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker"
     envVars:
       - key: DATABASE_URL # Sets DATABASE_URL to the connection string of the django-app-db database
         fromDatabase:
-          name: django-app-db
+          name: DIsBot.gg
           property: connectionString
 
 databases:
-  - name: django-app-db # A PostgreSQL database named django-app-db running on a free instance
+  - name: DisBot.gg # A PostgreSQL database named django-app-db running on a free instance
     plan: free
