@@ -3,7 +3,7 @@
 services:
   - type: web # A Python web service named django-app running on a free instance
     plan: free
-    name: django-app
+    name: DisBot.gg
     runtime: python
     repo: https://github.com/render-examples/django.git
     buildCommand: "./build.sh"
